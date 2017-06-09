@@ -2,6 +2,7 @@ from uuid import uuid4
 from User import *
 from Board import *
 
+#TODO refactor to handle CAT
 class Game:
     #TODO create user population from dictionary
     def __init__(self, game=None):
@@ -43,6 +44,11 @@ class Game:
     def move(self,board_index):
         if(not self.board.setPiece(self.users[self.state-1].getId(),board_index)):
             return "invalid"
+        
+        #Make move and check for CAT
+        if(not self.board.checkWin() and (len(self.board.getAvailable_moves())<1)):
+            self.state=4
+            return "CAT"
         
         if(self.board.checkWin()):
             winner=self.users[self.state-1]
