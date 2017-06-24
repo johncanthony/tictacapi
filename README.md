@@ -2,11 +2,9 @@
 ## Design/API
 
  
-##Classes
- 
-###User
- 
-####Variables
+## Classes
+### User
+#### Variables
  
 uid
 Type : uuid4() 
