@@ -1,13 +1,14 @@
 # TicTacAPI - Python Engine for TicTacToe
-## Design/API
-
- 
+Design/API
 ## Classes
+ ----------------------------------------------------------
 ### User
 #### Variables
  
-uid
+**uid**
+
 Type : uuid4() 
+
 Description: Unique identifier representing a user. This could also allow for long term user storage and username reuse    
 name
     Type: string
@@ -36,7 +37,7 @@ Description: Returns the object’s name
     Return:
         String : name
  
- ----------------------------------------------------------
+
  
  
  
