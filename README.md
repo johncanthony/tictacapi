@@ -1,20 +1,12 @@
-# tictacapi
-A base API for TicTacToe
+# TicTacAPI - Python Engine for TicTacToe
+## Design/API
 
-Description:
  
-Have a game that allows two people to play a game of tic-tac-toe over the web. The game and players will be represented by data models that will be handled by a central api. A game is won only when a player has three of their elements in a row in a 3x3 array. Winning configurations include horizontal,vertical, and diagonal lines consisting of a single user’s elements. The game should also track every move made in a game so that at any point in time the users may decide to go back to a previous gamestate.
+##Classes
  
+###User
  
- 
- 
-----------------------
- 
-Class Models:
- 
-User
- 
-Variables
+####Variables
  
 uid
 Type : uuid4() 
